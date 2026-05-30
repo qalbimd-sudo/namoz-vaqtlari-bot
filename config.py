@@ -1,10 +1,10 @@
-# Konfiguratsiya - muhit o'zgaruvchilari
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "YOUR_BOT_TOKEN_HERE")
+# Bot token - .env faylidan yoki to'g'ridan-to'g'ri
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8852833040:AAF9nWyMKNQdBqqjjBrayRuSRqw_BwF0iWU")
 
 # Namoz vaqtlari API sozlamalari
 NAMOZ_API_URL = "https://namoztime.herokuapp.com/api/kundalik/"
@@ -15,9 +15,5 @@ REGION = "Toshkent"
 CITY = "Tashkent"
 COUNTRY = "Uzbekistan"
 METHOD = 3  # Aladhan: Muslim World League metodi
-
-# Namoz vaqtlarini yuborish vaqti (Toshkent vaqti, UTC+5)
-BROADCAST_HOUR = 5    # 05:00
-BROADCAST_MINUTE = 0
 
 TIMEZONE = "Asia/Tashkent"
